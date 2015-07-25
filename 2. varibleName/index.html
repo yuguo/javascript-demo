@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Varible Name</title>
+</head>
+<body>
+	<script>
+		// 变量名使用驼峰风格
+		var somePerson = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+		// 使用构造函数，等价于上面的代码
+		var anotherPerson = new Object();
+		anotherPerson.firstName = "John";
+		anotherPerson.lastName = "Doe";
+		anotherPerson.age = 50;
+		anotherPerson.eyeColor = "blue";
+
+		// 构造函数使用大写字母开始的变量名
+		function Person(first, last, age, eye) {
+		    this.firstName = first;
+		    this.lastName = last;
+		    this.age = age;
+		    this.eyeColor = eye;
+		}
+		var justAnotherPerson = new Person('John', 'Doe', 50, 'blue');
+
+		// jQuery对象也可以使用$开头的变量名
+		var $someJqDom = $('#someid');
+	</script>
+</body>
+</html>
