@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>constructor</title>
+</head>
+<body>
+	<script>
+	/*
+		1. 构造函数也是函数，不存在定义函数的特殊语法
+		2. 习惯上首字母大写
+		3. 假设不使用new，直接调用会怎样？
+	*/
+	function Person(name, age, job){
+		this.name = name;
+		this.age = age;
+		this.job = job;
+		this.sayName = function(){
+			alert(this.name);
+		}
+	}
+
+	var person1 = new Person('John', 20, 'engineer');
+	// alert(person1.constructor == Person);
+	alert(person1 instanceof Person);
+
+	// var o = new Object();
+	// Person.call(o, 'john', 20, 'doctor');
+	// o.sayName();
+	</script>
+</body>
+</html>
