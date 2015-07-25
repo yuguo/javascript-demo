@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>constructor 2</title>
+</head>
+<body>
+	<script>
+	function Person(name, age, job){
+		this.name = name;
+		this.age = age;
+		this.job = job;
+		this.sayName = function(){
+			alert(this.name);
+		}
+	}
+
+	var person1 = new Person('John', 20, 'engineer');
+	var person2 = new Person('Peter', 20, 'doctor');
+
+	alert(person1.sayName == person2.sayName);
+	</script>
+</body>
+</html>
