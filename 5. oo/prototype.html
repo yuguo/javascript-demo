@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>prototype</title>
+</head>
+<body>
+	<script>
+	function Person(){}
+
+	Person.prototype.name = 'John';
+	Person.prototype.age = 20;
+	Person.prototype.job = 'engineer';
+
+	Person.prototype.sayName = function(){
+		alert(this.name);
+	}
+
+	var person1 = new Person();
+	var person2 = new Person();
+
+	alert(person1.sayName == person2.sayName);
+
+	// 这个连接存在于实例与构造函数的原型对象之间，而不是存在于实例与构造函数之间
+	</script>
+</body>
+</html>
