@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>prototype 2</title>
+</head>
+<body>
+	<script>
+	function Person(){};
+
+	Person.prototype.name = 'John';
+
+	var person1 = new Person();
+	// person1.name = 'new name';
+	// delete person1.name;
+	// alert(person1.name);
+
+	alert(person1.hasOwnProperty('name'));
+	</script>
+</body>
+</html>
