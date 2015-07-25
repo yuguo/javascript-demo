@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>set and getter</title>
+</head>
+<body>
+	<script>
+	var book = {
+		_year : 2014, // _表示只能通过对象方法访问
+		version : 1
+	}
+
+	Object.defineProperty(book, 'year', {
+
+		get: function(){
+			return this._year;
+		},
+
+		set: function(newValue){
+			this._year = newValue;
+			this.version++;
+		}
+	});
+
+	book.year = 2015;
+	alert(book.year);
+
+	</script>
+</body>
+</html>
