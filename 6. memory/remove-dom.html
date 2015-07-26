@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>removed dom</title>
+</head>
+<body>
+	<div id="myDiv">
+		<a href="##" id="myBtn">button</a>
+	</div>
+
+	<script>
+		var btn = document.getElementById('myBtn');
+		btn.onclick = function(){
+			// IE内存泄露
+			// 1. 手动清除
+			// 2. 事件委托
+			document.getElementById('myDiv').innerHTML = 'haha';
+		}
+	</script>
+</body>
+</html>
