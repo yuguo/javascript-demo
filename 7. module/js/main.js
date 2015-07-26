@@ -8,6 +8,7 @@ require.config({
 　　　　}
 　　});
 
-require(['jquery', 'underscore', 'backbone'], function ($, _, Backbone){
+require(['jquery', 'underscore', 'backbone', 'math'], function ($, _, Backbone, math){
 　　　　// some code here
+	alert(math.add(1,2));
 　　});
