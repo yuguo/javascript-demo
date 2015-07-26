@@ -1,0 +1,12 @@
+{
+  "name": "test",
+  "description": "js-lint test",
+  "author": {
+    "name": "yuguo"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "gulp-jslint": "~0.2.2"
+  }
+}
