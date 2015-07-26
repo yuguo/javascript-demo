@@ -1,0 +1,12 @@
+{
+  "name": "test",
+  "description": "js-gulify test",
+  "author": {
+    "name": "yuguo"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "gulp-uglify": "~1.2.0"
+  }
+}
