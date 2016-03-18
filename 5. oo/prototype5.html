@@ -10,19 +10,22 @@
 		this.name = name;
 		this.age = age;
 		this.job = job;
-	}
-
-	Person.prototype.sayName = function(){
+		this.sayName = function(){
 			alert(this.name);
 		}
+	}
+
 
 	var person1 = new Person('John', 20, 'engineer');
+	var person2 = new Person('Peter', 21, 'designer');
 	
 	// code here
 
 
 	
-	person1.sayName();
+	// person1.sayName();
+	// person2.sayName();
+	alert(person1.sayName == person2.sayName);
 	
 	</script>
 </body>

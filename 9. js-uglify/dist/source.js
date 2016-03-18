@@ -1,1 +1,1 @@
-!function(o){o.onload=function(){var n=1;o.console.log("This is a JSLint demo"),console.log(n)}}(window);
+!function(o){o.console.log("hello world!")}(window);

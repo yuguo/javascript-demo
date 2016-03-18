@@ -11,8 +11,8 @@ gulp.task('default', function () {
             // these directives can 
             // be found in the official 
             // JSLint documentation. 
-            // node: true,
-            browser: true,
+            node: true,
+            // browser: true,
             evil: true,
             nomen: true,
  

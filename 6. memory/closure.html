@@ -6,30 +6,31 @@
 </head>
 <body>
 	<script>
-	function f1(){
-		var a = 1;
-		var b = {name: 'John'};
-	}
-
-	f1();
-
 	// function f1(){
-	// 	var version = 1;
-	// 	versionAdd = function(){
-	// 		version++;
-	// 	}
-	// 	function f2(){
-	// 		alert(version);
-	// 	}
-	// 	return f2;
+	// 	var a = 1;
+	// 	var b = {name: 'John'};
 	// }
 
-	// var result = f1();
+	// f1();
+	// f1();
+
+	function f1(){
+		var version = 1;
+		versionAdd = function(){
+			version++;
+		}
+		function f2(){
+			alert(version);
+		}
+		return f2;
+	}
+
+	var result = f1();
 
 	// result();
-	// versionAdd();
+	versionAdd();
 
-	// result();
+	result();
 
 	</script>
 </body>

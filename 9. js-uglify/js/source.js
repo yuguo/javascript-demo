@@ -1,7 +1,5 @@
 (function(window){
-	window.onload = function(){
-		var abcdefg = 1;
-	    window.console.log('This is a JSLint demo');
-	    console.log(abcdefg);
-	}
+	var abcdefghijk = 1;
+	window.console.log('hello world!');
+	// window.alert(abcdefghijk);
 }(window));

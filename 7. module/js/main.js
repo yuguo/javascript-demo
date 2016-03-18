@@ -10,5 +10,5 @@ require.config({
 
 require(['jquery', 'underscore', 'backbone', 'math'], function ($, _, Backbone, math){
 　　　　// some code here
-	alert(math.add(1,2));
+	alert(math.multiple(1,2,4));
 　　});

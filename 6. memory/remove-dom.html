@@ -11,11 +11,13 @@
 
 	<script>
 		var btn = document.getElementById('myBtn');
+
 		btn.onclick = function(){
 			// IE内存泄露
 			// 1. 手动清除
 			// 2. 事件委托
 			document.getElementById('myDiv').innerHTML = 'haha';
+			btn = null;
 		}
 	</script>
 </body>

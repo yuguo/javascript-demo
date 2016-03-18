@@ -1,4 +1,8 @@
-window.onload = function(){
-	a = 1;
-    window.console.log('This is a JSLint demo');
-}
+// global window
+(function () {
+    'use strict';
+    window.onload = function () {
+        // var a = 1;
+        window.console.log('This is a JSLint demo');
+    };
+}());

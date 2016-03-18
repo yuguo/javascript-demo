@@ -11,9 +11,10 @@
 		exports.myExample = function () {};
 
 		// amd
-		define(['jquery'] , function ($) {
-		    return function () {};
-		});
+		function callBackHandler = function($){
+		    // $
+		}
+		define(['jquery'] , callBackHandler($));
 	</script>
 </body>
 </html>

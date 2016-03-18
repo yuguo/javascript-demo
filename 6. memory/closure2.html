@@ -9,11 +9,13 @@
 	function bindEvent() 
 	{ 
 	    var obj=document.createElement("XXX"); 
-	    obj.onclick=function(){ 
-	        //Even if it's a empty function 
-	    } 
-	    // obj=null; 
+	    obj.onclick=clickHandler;
+	    obj=null; 
 	}
+
+	function clickHandler(){ 
+	        //Even if it's a empty function 
+	    }; 
 
 	// clickHandler
 
