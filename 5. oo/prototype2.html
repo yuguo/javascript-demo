@@ -6,16 +6,18 @@
 </head>
 <body>
 	<script>
-	function Person(){};
+	function Person(name){
+		this.name = name;
+	};
 
 	Person.prototype.name = 'John';
 
-	var person1 = new Person();
-	person1.name = 'new name';
+	var person1 = new Person('old name');
+	// person1.name = 'new name';
 	delete person1.name;
-	// alert(person1.name);
+	alert(person1.name);//john
 
-	alert(person1.hasOwnProperty('name'));
+	alert(person1.hasOwnProperty('name'));//false
 	</script>
 </body>
 </html>

@@ -21,15 +21,15 @@
 	}
 
 	// Person('Peter',22,'doctor');
-	// window.sayName();
 
 	var person1 = new Person('John', 20, 'engineer');
+	var person2 = new Person('John', 20, 'engineer');
 	// alert(person1.constructor == Person);
-	alert(person1 instanceof Object);
+	// alert(person1 instanceof Object);
 
-	// var o = new Object();
-	// Person.call(o, 'john', 20, 'doctor');
-	// o.sayName();
+	var o = new Object();
+	Person.call(o, 'john', 20, 'doctor');
+	o.sayName();
 	</script>
 </body>
 </html>

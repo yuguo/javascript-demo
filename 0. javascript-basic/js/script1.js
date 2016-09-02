@@ -1,3 +1,2 @@
-
-		document.write(msg);
-		msg = 'Hello World!<br/>';
+document.write(msg);
+msg = 'Hello World!<br/>';

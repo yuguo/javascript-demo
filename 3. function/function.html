@@ -6,14 +6,15 @@
 </head>
 <body>
 	<script>
+	var david = {'name': 'david'};
 
+	var foo = function(people){
+		people={'name': 'peter'};
+		alert(people.name); //1
+	};
 
-		// sayHi();
-		
-		(function(){
-			alert('hi');
-		}());
-		
+	foo(david);
+	alert(david.name); //2
 
 	</script>
 </body>
