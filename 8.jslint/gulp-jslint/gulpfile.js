@@ -3,6 +3,7 @@ var jslint = require('gulp-jslint');
 
 // build the main source into the min file
 gulp.task('default', function () {
+  'use strict';
   return gulp.src(['source.js'])
 
         // pass your directives

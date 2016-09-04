@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>let2</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    var a = [];
+     for (let i = 0; i < 5; ++i) { // *** `let` works as expected ***
+
+         var x = i;
+       a.push( function() {return x;} );
+     }
+    // console.log(a.map( function(f) {f()} ));
+    </script>
+  </body>
+</html>
