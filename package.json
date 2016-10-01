@@ -36,5 +36,9 @@
     "rc": "^1.1.6",
     "rd": "^0.0.2",
     "tmt-ejs-helper": "^0.0.1"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^11.1.0",
+    "eslint-config-airbnb-base": "^7.1.0"
   }
 }
